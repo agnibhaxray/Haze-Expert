@@ -54,6 +54,7 @@ def process_video(video_path):
             break
 
         # Apply your dehazing algorithm to 'frame' here
+        
         # Replace this with your actual dehazing code
         processed_frame = frame
 

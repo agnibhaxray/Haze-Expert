@@ -1,5 +1,5 @@
 import cv2
-import dehaze  # Import your dehazing function
+from dehaze import dehaze  # Import your dehazing function
 
 # Create a VideoCapture object for the default camera (webcam)
 video_capture = cv2.VideoCapture(0)

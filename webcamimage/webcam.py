@@ -1,5 +1,5 @@
 import cv2
-from your_dehazing_script import dehaze  # Import your dehazing function
+import dehaze  # Import your dehazing function
 
 # Create a VideoCapture object for the default camera (webcam)
 video_capture = cv2.VideoCapture(0)
@@ -12,7 +12,7 @@ while True:
         break
 
     # Call your dehazing function to process the frame
-    processed_frame = dehaze(frame)
+    processed_frame = dehaze.dehaze(frame)
 
     # Display the processed frame (optional)
     cv2.imshow('Processed Frame', processed_frame)

@@ -62,9 +62,9 @@ def dehaze(path, output = None):
     for i in range(3):
         result[:, :, i] = (img[:, :, i] - atom) / trans_guided + atom
 
-    cv2.imshow("source",img)
-    cv2.imshow("result", result)
-    cv2.waitKey()
+    # cv2.imshow("source",img)
+    # cv2.imshow("result", result)
+    # cv2.waitKey()
     if output is not None:
         cv2.imwrite(output, result * 255)
 
@@ -74,9 +74,11 @@ parser.add_argument('-i', '--input')
 parser.add_argument('-o', '--output')
 args = parser.parse_args()
 
+def runDehazingAlgo(input_file_path,output_file_path):
+    dehaze(input_file_path,output_file_path)
 
 if __name__ == '__main__':
     if args.input is None:
-        printf("INVALID INPUT, enter properly ")
+        print("INVALID INPUT, enter properly")
     else:
         dehaze(args.input, args.output)

@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         skin: 'rgba(229, 188, 173, 0.71)',
+        boxbg:'rgba(161,161,161,1)',
+        
         purpleBlue: 'rgba(94, 89, 207, 0.71)',
         mix: '#a496c6',
         orskin: '#FCA087',

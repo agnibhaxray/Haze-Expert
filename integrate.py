@@ -1,7 +1,7 @@
 
 ## Integrate HTML with Flask
 
-from flask import Flask,redirect,url_for,render_template
+from flask import *
 
 app==flask(__name__)
 
@@ -13,7 +13,7 @@ def welcome:
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
-        data = request.form.get('data')  # Access form data  In the HTML form defined in your index.html file, there's an input field with the name 'data'.
+        data = request.form.get('bgfile')  # Access form data  In the HTMLform defined in your index.html file, there's an input field with the name 'data'.
         # Process the data as needed
         def process_data(data):
             # You can perform any processing or computations you need here

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import cv2
 import numpy as np
 import argparse
@@ -13,16 +12,14 @@ def dark_channel(img, size = 15):
 
 
 def get_atmo(img, percent = 0.001):
-    mean_perpix = np.mean(img, axis = 2).reshape(-1)
-    mean_topper = mean_perpix[:int(img.shape[0] * img.shape[1] * percent)]
+    mean_perpix = np.mean(img, axis = 2).reshape(-1)     # Calculate the mean pixel values across the color channels (axis=2)
+    mean_topper = mean_perpix[:int(img.shape[0] * img.shape[1] * percent)]     # Calculate how many pixels to consider for estimating the atmospheric light and take the top 'num_pixels_to_consider' brightest pixels
     return np.mean(mean_topper)
-
 
 def get_trans(img, atom, w = 0.95):
     x = img / atom
     t = 1 - w * dark_channel(x, 15)
     return t
-
 
 def guided_filter(p, i, r, e):
     """
@@ -80,6 +77,6 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
     if args.input is None:
-        printf("INVALID INPUT")
+        printf("INVALID INPUT, enter properly ")
     else:
         dehaze(args.input, args.output)

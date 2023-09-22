@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="dist/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Lexend+Deca:wght@700&display=swap" rel="stylesheet">
+	<link rel="icon" href="./favicon_io/favicon.ico">
+</head>
+
+<body>
+	<div class="bg-gradient-to-b from-skin to-purpleBlue h-71">
+		<div>
+			<nav class="text-right items-center">
+			  <div class="flex justify-between items-center">
+				<img class="pt-6 pl-5 w-16 top-0" src="./images/logo-removebg-preview.png" alt="logo">
+				<p class="absolute ml-20 text-xl font-semibold mt-6">HazeXpert</p>
+				<div class="px-4 cursor-pointer md:hidden z-20" id="burger">
+				  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white" id="menuIcon">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				  </svg>
+				  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white hidden" id="crossIcon">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				  </svg>
+				</div>
+			  </div>
+			  <ul class="relative -mt-8 hidden md:block text-black text-xl pr-4 z-20" id="menu">
+				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="index.html" target="_blank" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">Home</a></li>
+				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="#about" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">About</a></li>
+				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="#support" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">Support</a></li>
+				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="#faq" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">FAQ</a></li>
+			  </ul>
+			  <img class="absolute -top-4 right-0 w-[435px]" src="./images/Ellipse.png" alt="ellipse-img">
+			</nav>
+		</div>
+
+		<section id="about">
+			<h1>
+				<div class="relative top-16 left-6 space-x-4">
+					<span class="uppercase font-extrabold text-8xl text-black font-lexend-deca">About</span>
+  					<span class="uppercase font-extrabold text-8xl text-white font-lexend-deca">Us</span>
+				</div>
+			</h1>
+			<section class="mt-28" id="body">
+				<p class="w-[446px] relative left-6 font-dm-sans text-lg font-semibold text-justify">As we all know Firefighters work in a very smoky environment and have the huge responsibility to save as many lives as possible. HazeXpert enables the firefighters to see clearer through thr smoke, resulting in faster response time. Since every second is valuable in situations like these , a faster response could effectively save someone's life. 
+				</p>
+
+				<div class="container">
+					<div class="image-container">
+					  <img
+						class="image-before slider-image w-[300px]"
+					   src="./images/input1.png"
+						alt="color photo"
+					  />
+					  <img
+						class="image-after slider-image w-[300px]"
+						src="./images/output1.jpeg.jpg"
+						alt="black and white"
+					  />
+					</div>
+					<!-- step="10" -->
+					<input
+					  type="range"
+					  min="0"
+					  max="100"
+					  value="50"
+					  aria-label="Percentage of before photo shown"
+					  class="slider"
+					/>
+					<div class="slider-line" aria-hidden="true"></div>
+					<div class="slider-button" aria-hidden="true">
+					  <svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="30"
+						height="30"
+						fill="currentColor"
+						viewBox="0 0 256 256"
+					  >
+						<rect width="256" height="256" fill="none"></rect>
+						<line
+						  x1="128"
+						  y1="40"
+						  x2="128"
+						  y2="216"
+						  fill="none"
+						  stroke="currentColor"
+						  stroke-linecap="round"
+						  stroke-linejoin="round"
+						  stroke-width="16"
+						></line>
+						<line
+						  x1="96"
+						  y1="128"
+						  x2="16"
+						  y2="128"
+						  fill="none"
+						  stroke="currentColor"
+						  stroke-linecap="round"
+						  stroke-linejoin="round"
+						  stroke-width="16"
+						></line>
+						<polyline
+						  points="48 160 16 128 48 96"
+						  fill="none"
+						  stroke="currentColor"
+						  stroke-linecap="round"
+						  stroke-linejoin="round"
+						  stroke-width="16"
+						></polyline>
+						<line
+						  x1="160"
+						  y1="128"
+						  x2="240"
+						  y2="128"
+						  fill="none"
+						  stroke="currentColor"
+						  stroke-linecap="round"
+						  stroke-linejoin="round"
+						  stroke-width="16"
+						></line>
+						<polyline
+						  points="208 96 240 128 208 160"
+						  fill="none"
+						  stroke="currentColor"
+						  stroke-linecap="round"
+						  stroke-linejoin="round"
+						  stroke-width="16"
+						></polyline>
+					  </svg>
+					</div>
+				  </div>
+				<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/dzqDU9efnnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  </div>
+			</section>
+		</section>
+	</div>
+</body>
+
+</html>

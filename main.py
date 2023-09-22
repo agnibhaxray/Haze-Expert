@@ -18,6 +18,8 @@ except subprocess.CalledProcessError as e:
     print("Error:", e)
 
 command = ["python3","save_video.py", sys.argv[2]]
+if(sys.argv[2] is None):
+    command.pop()
 try:
     result = subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     print("Script output:")

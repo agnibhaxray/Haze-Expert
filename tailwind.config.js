@@ -17,6 +17,7 @@ module.exports = {
         feat_2: 'rgba(106, 124, 226, 1)',
         feat_3: 'rgba(244, 204, 194, 1)',
         feat_text: 'rgba(61, 61, 61, 1)',
+        feat_brdr: 'rgba(251, 212, 202, 0.97)',
       },
 
       fontFamily: {
@@ -25,6 +26,7 @@ module.exports = {
       },
 
       height: {
+        '20.5': '20rem',
         '71': '71rem', 
         '200': '200rem',
       },

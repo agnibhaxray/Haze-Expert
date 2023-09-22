@@ -542,6 +542,18 @@ video {
   position: relative;
 }
 
+.-left-16 {
+  left: -4rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-right-24 {
+  right: -6rem;
+}
+
 .-top-10 {
   top: -2.5rem;
 }
@@ -560,6 +572,10 @@ video {
 
 .bottom-14\.5 {
   bottom: 14.5rem;
+}
+
+.bottom-22 {
+  bottom: 22rem;
 }
 
 .bottom-27 {
@@ -582,8 +598,20 @@ video {
   bottom: 10rem;
 }
 
+.bottom-48 {
+  bottom: 12rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-28 {
+  left: 7rem;
+}
+
+.left-28\.5 {
+  left: 28rem;
 }
 
 .left-34 {
@@ -592,6 +620,10 @@ video {
 
 .left-37 {
   left: 37rem;
+}
+
+.left-42 {
+  left: 42rem;
 }
 
 .left-48 {
@@ -622,6 +654,10 @@ video {
   left: 1.5rem;
 }
 
+.left-7 {
+  left: 1.75rem;
+}
+
 .left-72 {
   left: 18rem;
 }
@@ -632,6 +668,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .right-12 {
@@ -720,6 +760,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-\[-20\] {
+  z-index: -20;
 }
 
 .m-1 {
@@ -820,8 +864,24 @@ video {
   height: 116px;
 }
 
+.h-\[169px\] {
+  height: 169px;
+}
+
 .h-\[240px\] {
   height: 240px;
+}
+
+.h-\[244px\] {
+  height: 244px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[257px\] {
+  height: 257px;
 }
 
 .h-\[259px\] {
@@ -848,8 +908,28 @@ video {
   width: 1.5rem;
 }
 
+.w-\[220px\] {
+  width: 220px;
+}
+
+.w-\[225px\] {
+  width: 225px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
 .w-\[259px\] {
   width: 259px;
+}
+
+.w-\[310px\] {
+  width: 310px;
+}
+
+.w-\[320px\] {
+  width: 320px;
 }
 
 .w-\[330px\] {
@@ -878,6 +958,14 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1039,6 +1127,11 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1101,6 +1194,10 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-feat_text {
+  color: rgba(61, 61, 61, 1);
 }
 
 .text-gray-700 {

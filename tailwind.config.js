@@ -14,6 +14,7 @@ module.exports = {
         feat_1: 'rgba(252, 160, 135, 1)',
         feat_2: 'rgba(106, 124, 226, 1)',
         feat_3: 'rgba(244, 204, 194, 1)',
+        feat_text: 'rgba(61, 61, 61, 1)',
       },
 
       fontFamily: {
@@ -38,6 +39,7 @@ module.exports = {
         '32.5': '32rem',
         '34': '34rem',
         '37': '37rem',
+        '42': '42rem',
         '45': '45rem',
         '48.5': '48rem',
         '50': '50rem',

@@ -1,4 +1,5 @@
 import cv2
+import sys
 import os
 
 def extract_frames(video_path, output_dir):
@@ -42,7 +43,7 @@ def extract_frames(video_path, output_dir):
 
 # Example usage:
 # Specify the path to the video file and the output directory
-video_path = "/Users/sagnik-p/Downloads/video_in.mp4"
+video_path = sys.argv[1]
 output_directory = "input_frames"
 
 # Call the function to extract frames

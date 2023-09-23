@@ -10,7 +10,15 @@ save_directory = "uploaded_images"
 
 # Title and description
 st.title("Desmoking/Dehazing Web App")
+def delete_files(folder_path):
+# List all files in the specified directory
+    file_names = os.listdir(folder_path)
 
+# Iterate through the files and remove them
+    for file_name in file_names:
+        file_path = os.path.join(folder_path, file_name)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
 uploaded_image = st.file_uploader("Upload a file", type=["jpg", "png", "jpeg", "mp4"])
 
 if uploaded_image:
@@ -39,4 +47,5 @@ if st.button("Process Image"):
         
         # Display the processed image
         processed_image = cv2.imread("processed_"+file_name)
-        st.image(processed_image, caption="Processed Image", use_column_width=True)
+        delete_files("./uploaded_images")
+        st.image(processed_image, caption="Processed Image", use_column_width=False)

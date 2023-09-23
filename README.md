@@ -5,16 +5,22 @@ Tech Stack
 - HTML
 - TailwindCSS
 - Javacript
+- Python
+- 
 
 #Key Features
 - Data Authentication
-- Brings back the actual quality
+- Brings back tresponsivehe actual quality
 - User friendly 
 - Real time vedio implementation
 
 #Snapshots
 - responsive and userfriendly UI
- 
-![](https://github.com/sagnik-p/HazeXpert/blob/main/images/input.png)
 
+![Hazexpert(1)](https://github.com/sagnik-p/HazeXpert/assets/113929010/46de62de-ec3e-47f2-bf8e-14edcdcb80d1)
 
+-Input 
+![input(1)](https://github.com/sagnik-p/HazeXpert/assets/113929010/bf2914e5-0bb1-4152-90bb-6de879891eb4)
+
+-Output
+![output](https://github.com/sagnik-p/HazeXpert/assets/113929010/1f358760-cbf9-44be-a889-7036af659ae9)

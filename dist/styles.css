@@ -598,6 +598,10 @@ video {
   bottom: 32rem;
 }
 
+.bottom-37 {
+  bottom: 37rem;
+}
+
 .bottom-40 {
   bottom: 10rem;
 }
@@ -794,34 +798,6 @@ video {
   top: 86rem;
 }
 
-.top-96 {
-  top: 24rem;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.bottom-60 {
-  bottom: 15rem;
-}
-
-.bottom-30 {
-  bottom: 30rem;
-}
-
-.bottom-34 {
-  bottom: 34rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.bottom-37 {
-  bottom: 37rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -918,6 +894,14 @@ video {
   margin-left: 5rem;
 }
 
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -928,6 +912,14 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-28 {
@@ -948,6 +940,18 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.-mt-56 {
+  margin-top: -14rem;
 }
 
 .block {
@@ -1008,6 +1012,10 @@ video {
 
 .h-72 {
   height: 18rem;
+}
+
+.h-90 {
+  height: 90rem;
 }
 
 .h-\[116px\] {
@@ -1758,6 +1766,18 @@ body {
 .hover\:px-3:hover {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
+.hover\:font-extrabold:hover {
+  font-weight: 800;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
 }
 
 .hover\:text-blue-600:hover {

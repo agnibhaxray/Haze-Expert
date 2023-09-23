@@ -12,12 +12,12 @@ if uploaded_image:
 
 if st.button("Process Image"):
     if uploaded_image is not None:
-        # Convert the uploaded image data to bytes
+        # Read the uploaded image data as bytes
         uploaded_image_bytes = uploaded_image.read()
         
-        # Provide an output path for the processed image
-        output_image_path = "processed_image.jpg"
-        dehaze.dehaze(uploaded_image_bytes, output_image_path)
+        # Process the image data using the dehaze function
+        processed_image_bytes = dehaze.dehaze(uploaded_image_bytes)
         
-        processed_image = Image.open(output_image_path)
+        # Display the processed image
+        processed_image = Image.open(io.BytesIO(processed_image_bytes))
         st.image(processed_image, caption="Processed Image", use_column_width=True)

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-div#comparison1 {
+div#comparison {
 	width: 60vw;
 	height: 45vw;
 	max-width: 600px;
@@ -10,7 +10,7 @@ div#comparison1 {
 	overflow: hidden;
 }
 
-div#comparison1 figure {
+div#comparison figure {
 	background-image: url("../images/input1.png");
 	background-size: cover;
 	position: relative;
@@ -20,12 +20,12 @@ div#comparison1 figure {
 	margin: 0;
 }
 
-div#comparison1 figure>img {
+div#comparison figure>img {
 	position: relative;
 	width: 100%;
 }
 
-div#comparison1 figure div {
+div#comparison figure div {
 	background-image: url("../images/output1.jpeg.jpg");
 	background-size: cover;
 	position: absolute;

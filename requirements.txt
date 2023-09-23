@@ -1,3 +1,4 @@
 streamlit
-opencv-python
+opencv-python==3.4.0.14
 numpy
+opencv-python-headless

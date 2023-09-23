@@ -49,7 +49,7 @@ def guided_filter(p, i, r, e):
 
 
 def dehaze(path, output = None):
-    im = cv2.imread(path)
+    im = cv2.imread(str(path))
     img = im.astype('float64') / 255
     img_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY).astype('float64') / 255
 

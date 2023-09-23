@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="bg-gradient-to-b from-skin to-purpleBlue h-71">
+	<div class="bg-gradient-to-b from-skin to-purpleBlue h-200">
 		<div>
 			<nav class="text-right items-center">
 			  <div class="flex justify-between items-center">
@@ -34,111 +34,45 @@
 				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="#support" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">Support</a></li>
 				<li class="md:inline-block my-6 md:my-0 md:mx-6"><a href="#faq" class="justify-end hover:bg-mix hover:text-white hover:rounded-full hover:px-3 py-2 transition-all ease-out duration-300 font-normal text-newGray">FAQ</a></li>
 			  </ul>
-			  <img class="absolute -top-4 right-0 w-[435px]" src="./images/Ellipse.png" alt="ellipse-img">
 			</nav>
 		</div>
 
 		<section id="about">
 			<h1>
-				<div class="relative top-16 left-6 space-x-4">
-					<span class="uppercase font-extrabold text-8xl text-black font-lexend-deca">About</span>
-  					<span class="uppercase font-extrabold text-8xl text-white font-lexend-deca">Us</span>
+				<div class="relative top-16 left-20 space-x-4">
+					<span class="uppercase font-extrabold text-9xl text-black font-lexend-deca">About</span>
+  					<span class="uppercase font-extrabold text-9xl text-white font-lexend-deca">Us</span>
 				</div>
 			</h1>
 			<section class="mt-28" id="body">
-				<p class="w-[446px] relative left-6 font-dm-sans text-lg font-semibold text-justify">As we all know Firefighters work in a very smoky environment and have the huge responsibility to save as many lives as possible. HazeXpert enables the firefighters to see clearer through thr smoke, resulting in faster response time. Since every second is valuable in situations like these , a faster response could effectively save someone's life. 
-				</p>
+				<div class="flex flex-wrap">
+					<p class="w-[500px] relative top-24 left-20 font-dm-sans text-2xl font-semibold text-justify">As we all know Firefighters work in a very smoky environment and have the huge responsibility to save as many lives as possible. HazeXpert enables the firefighters to see clearer through thr smoke, resulting in faster response time. Since every second is valuable in situations like these , a faster response could effectively save someone's life. 
+					</p>
+					<div class="absolute right-48" id="comparison1">
+						<figure>
+						  <div id="divisor1"></div>
+						</figure>
+						<input type="range" min="0" max="100" value="50" id="slider1" oninput="moveDivisor()">
+					</div>
+				</div>
 
-				<div class="container">
-					<div class="image-container">
-					  <img
-						class="image-before slider-image w-[300px]"
-					   src="./images/input1.png"
-						alt="color photo"
-					  />
-					  <img
-						class="image-after slider-image w-[300px]"
-						src="./images/output1.jpeg.jpg"
-						alt="black and white"
-					  />
+				<div class="flex flex-wrap relative top-80">
+					<p class="w-[500px] relative top-10 left-56.5 font-dm-sans text-2xl font-semibold text-justify">After dehazing individual frames of the video, the  frames are then stitched together to form a video again.  This output video now contains a clearer view, without  the fog / smoke. There is a significant time delay since  the image processing is not done on the device, but  sent to a server. We have used the Stable Diffusion  model to train and finetune our model. For the image  dataset, we have used two versions of every image -  one clear and another hazy/smoky. Different from traditional math operations-based tools and quite time consuming methods, HazeXpert excels at handling real details with deep learning.
+					</p>
+					<div class="relative right-25" id="comparison2">
+						<figure>
+						  <div id="divisor2"></div>
+						</figure>
+						<input type="range" min="0" max="100" value="50" id="slider2" oninput="moveDivisor()">
 					</div>
-					<!-- step="10" -->
-					<input
-					  type="range"
-					  min="0"
-					  max="100"
-					  value="50"
-					  aria-label="Percentage of before photo shown"
-					  class="slider"
-					/>
-					<div class="slider-line" aria-hidden="true"></div>
-					<div class="slider-button" aria-hidden="true">
-					  <svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="30"
-						height="30"
-						fill="currentColor"
-						viewBox="0 0 256 256"
-					  >
-						<rect width="256" height="256" fill="none"></rect>
-						<line
-						  x1="128"
-						  y1="40"
-						  x2="128"
-						  y2="216"
-						  fill="none"
-						  stroke="currentColor"
-						  stroke-linecap="round"
-						  stroke-linejoin="round"
-						  stroke-width="16"
-						></line>
-						<line
-						  x1="96"
-						  y1="128"
-						  x2="16"
-						  y2="128"
-						  fill="none"
-						  stroke="currentColor"
-						  stroke-linecap="round"
-						  stroke-linejoin="round"
-						  stroke-width="16"
-						></line>
-						<polyline
-						  points="48 160 16 128 48 96"
-						  fill="none"
-						  stroke="currentColor"
-						  stroke-linecap="round"
-						  stroke-linejoin="round"
-						  stroke-width="16"
-						></polyline>
-						<line
-						  x1="160"
-						  y1="128"
-						  x2="240"
-						  y2="128"
-						  fill="none"
-						  stroke="currentColor"
-						  stroke-linecap="round"
-						  stroke-linejoin="round"
-						  stroke-width="16"
-						></line>
-						<polyline
-						  points="208 96 240 128 208 160"
-						  fill="none"
-						  stroke="currentColor"
-						  stroke-linecap="round"
-						  stroke-linejoin="round"
-						  stroke-width="16"
-						></polyline>
-					  </svg>
-					</div>
-				  </div>
-				<div class="video-container">
-				<iframe src="https://www.youtube.com/embed/dzqDU9efnnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  </div>
+				</div>
 			</section>
 		</section>
+
+		<div class="border-t-2 border-white relative top-30"></div>
+
 	</div>
+	<script src="app.js" defer></script>
 </body>
 
 </html>

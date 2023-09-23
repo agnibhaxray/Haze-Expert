@@ -4,7 +4,7 @@ import os
 
 # Parameters
 image_folder = './output_frames/'  # Replace with the path to your image folder
-video_name = 'output_video.mp4'
+video_name = sys.argv[1]
 fps = 29.70  # Frames per second
 
 # Get a list of image files in the folder

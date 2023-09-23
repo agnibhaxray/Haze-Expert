@@ -48,8 +48,8 @@ def guided_filter(p, i, r, e):
     return q
 
 
-def dehaze(path, output = None):
-    im = cv2.imread(str(path))
+def dehaze(file_bytes,output_image_path):
+    im= cv2.imdecode(file_bytes, 1)
     img = im.astype('float64') / 255
     img_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY).astype('float64') / 255
 
@@ -62,12 +62,9 @@ def dehaze(path, output = None):
     for i in range(3):
         result[:, :, i] = (img[:, :, i] - atom) / trans_guided + atom
 
-    # cv2.imshow("source",img)
-    # cv2.imshow("result", result)
-    # cv2.waitKey()
-    if output is not None:
-        cv2.imwrite(output, result * 255)
-
+    # Convert the processed image back to bytes
+    _, processed_image_data = cv2.imencode(".jpg", result * 255)
+    return processed_image_data.tobytes()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--input')

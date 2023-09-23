@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
+import cv2
 import os
+import io
 from PIL import Image
 from PIL import Image
 import dehaze  # Import your modified dehaze.py script
@@ -36,5 +38,5 @@ if st.button("Process Image"):
             dehaze.dehaze("./uploaded_images/"+file_name, output_image_path)
         
         # Display the processed image
-        processed_image = Image.open(io.BytesIO(processed_image_bytes))
+        processed_image = cv2.imread("processed_"+file_name)
         st.image(processed_image, caption="Processed Image", use_column_width=True)

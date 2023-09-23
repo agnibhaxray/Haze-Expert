@@ -35,5 +35,6 @@ if st.button("Process Image"):
             print(output_image_path)
             dehaze.dehaze("./uploaded_images/"+file_name, output_image_path)
         
-        processed_image = Image.open(output_image_path)
+        # Display the processed image
+        processed_image = Image.open(io.BytesIO(processed_image_bytes))
         st.image(processed_image, caption="Processed Image", use_column_width=True)

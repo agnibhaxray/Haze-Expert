@@ -62,12 +62,9 @@ def dehaze(file_bytes,output_image_path):
     for i in range(3):
         result[:, :, i] = (img[:, :, i] - atom) / trans_guided + atom
 
-    # cv2.imshow("source",img)
-    # cv2.imshow("result", result)
-    # cv2.waitKey()
-    if output is not None:
-        cv2.imwrite(output_image_path, result * 255)
-
+    # Convert the processed image back to bytes
+    _, processed_image_data = cv2.imencode(".jpg", result * 255)
+    return processed_image_data.tobytes()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--input')

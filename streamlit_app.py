@@ -3,8 +3,9 @@ import cv2
 import numpy as np
 import argparse
 from PIL import Image
+import streamlit.components.v1 as components
 import dehaze  # Replace with the name of your image processing script
-st.write('''<!DOCTYPE html>
+components.html("""<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -257,20 +258,5 @@ st.write('''<!DOCTYPE html>
 	<script src="index.js"></script>
 </body>
 
-</html>''')
-# Title and description
-st.title("Desmoking/Dehazing Web App")
-
-uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
-
-if uploaded_image:
-    st.image(uploaded_image, caption="Uploaded Image", use_column_width=True)
-
-if st.button("Desmoke/Dehaze Image"):
-    # Read the uploaded image
-    output_image_path = "output_image.jpg"  # Provide an output path
-    dehaze.dehaze(uploaded_image, output_image_path)
-    processed_image = Image.open(output_image_path)
-    st.image(processed_image, caption="Clear Image", use_column_width=True)
-    
-    
+</html>""")
+# Title and descriptio

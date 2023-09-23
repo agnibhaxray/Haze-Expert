@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import cv2
 import os
-import io
 from PIL import Image
 from PIL import Image
 import dehaze  # Import your modified dehaze.py script
